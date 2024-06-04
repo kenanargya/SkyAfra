@@ -48,45 +48,46 @@ node app.js
 ```
 The server will run on http://localhost:8080 by default.
 
-**API Endpoints**
-Register
-- URL: `/auth/register`
-- Method: `POST`
-- Headers: Content-Type: `application/json`
-- Body:
-```json
-   {
-  "email": "user@example.com",
-  "username": "user123",
-  "password": "password123"
-   }
-  ```
+## API Endpoints
 
-![Screenshot 2024-06-05 005340](https://github.com/kenanargya/SkyAfra/assets/71255346/98e331c2-0c01-4905-af4f-c4038e3ceeee)
+1. **Register**
+   - URL: `/auth/register`
+   - Method: `POST`
+   - Headers: Content-Type: `application/json`
+   - Body:
+   ```json
+      {
+     "email": "user@example.com",
+     "username": "user123",
+     "password": "password123"
+      }
+     ```
+   
+   ![Screenshot 2024-06-05 005340](https://github.com/kenanargya/SkyAfra/assets/71255346/98e331c2-0c01-4905-af4f-c4038e3ceeee)
 
-Login
-- URL: `/auth/login`
-- Method: `POST`
-- Headers: Content-Type: `application/json`
-- Body:
-```json
-   {
-  "email": "user@example.com",
-  "password": "password123"
-   }
-  ```
+2. **Login**
+   - URL: `/auth/login`
+   - Method: `POST`
+   - Headers: Content-Type: `application/json`
+   - Body:
+   ```json
+      {
+     "email": "user@example.com",
+     "password": "password123"
+      }
+     ```
+   
+   ![Screenshot 2024-06-05 005632](https://github.com/kenanargya/SkyAfra/assets/71255346/b1d7eb4f-c3af-47e3-bc48-78dcf4778daf)
 
-![Screenshot 2024-06-05 005632](https://github.com/kenanargya/SkyAfra/assets/71255346/b1d7eb4f-c3af-47e3-bc48-78dcf4778daf)
-
-Logout
-- URL: `/auth/logout`
-- Method: `POST`
-- Headers:
-   - Content-Type: `application/json`
-   - Authorization: `Bearer your_jwt_token`
-- Body:
-```json
-{}
-```
-
-![Screenshot 2024-06-05 010401](https://github.com/kenanargya/SkyAfra/assets/71255346/f647a4ac-252e-43ac-a6e3-96f66e0cfbe8)
+3. **Logout**
+   - URL: `/auth/logout`
+   - Method: `POST`
+   - Headers:
+      - Content-Type: `application/json`
+      - Authorization: `Bearer your_jwt_token`
+   - Body:
+   ```json
+   {}
+   ```
+   
+   ![Screenshot 2024-06-05 010401](https://github.com/kenanargya/SkyAfra/assets/71255346/f647a4ac-252e-43ac-a6e3-96f66e0cfbe8)
