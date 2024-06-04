@@ -23,8 +23,8 @@
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git
-   cd your-repository
+   git clone https://github.com/kenanargya/SkyAfra.git
+   cd SkyAfra
    ```
 
 2. **Install Dependencies**
