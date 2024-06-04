@@ -1,22 +1,14 @@
 const express = require('express');
+require('dotenv').config();
 const app = express();
 const authRoutes = require('./routes/auth');
-const db = require('./config/db');
-const authMiddleware = require('./middlewares/authMiddleware');
+require('dotenv').config();
 
 app.use(express.json());
-app.use(authRoutes);
+app.use('/auth', authRoutes);
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8081;
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
-
-  db.execute('SELECT 1')
-    .then(() => {
-      console.log('Database connection successful');
-    })
-    .catch((err) => {
-      console.error('Database connection failed:', err);
-    });
 });
